@@ -3,11 +3,11 @@ create database test;
 use test;
 
 create table student_info(
- number char(4) not null primary key,
- name char(8) not null,
- sex  char(2),
- birth date,
- address varchar(50)
+   number char(4) not null primary key,
+   name char(8) not null,
+   sex  char(2),
+   birth date,
+   address varchar(50)
  );
  
 INSERT INTO student_info (number, name, sex, birth, address) VALUES
@@ -23,7 +23,7 @@ INSERT INTO student_info (number, name, sex, birth, address) VALUES
 
  
  create table curriculum (
-	classnumber char(4) not null primary key,
+    classnumber char(4) not null primary key,
     classname varchar(50),
     score int
  );
