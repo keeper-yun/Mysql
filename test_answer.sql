@@ -21,7 +21,7 @@ select count(*) from grade where classnumber='0003';
 select name,birth from student_info order by birth desc;
 
 -- 2.(5)
-select number,name from student_info where name like '%张%%';
+select number,name from student_info where name like '张%';
 
 -- 3
 select number,name,sex,birth,address from student_info order by sex,birth desc;
