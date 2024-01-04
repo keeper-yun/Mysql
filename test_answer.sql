@@ -18,13 +18,13 @@ select avg(score) as 平均成绩 from grade where classnumber='0002';
 select count(*)，count(score) from grade where classnumber='0003';
 
 -- 2.(4)
-select name,birth from student_info order by number desc;
+select name,birth from student_info order by birth desc;
 
 -- 2.(5)
 select number,name from student_info where name like '张%';
 
 -- 3
-select number,name,sex,birth,address from student_info order by sex,birth desc;
+select number,name,sex,birth,address from student_info order by sex,number desc;
 
 -- 4
 select number,avg(score) from grade group by number;
